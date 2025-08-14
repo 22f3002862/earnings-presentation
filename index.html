@@ -3,6 +3,8 @@
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
+    <!-- Add syntax highlighting theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
     <title>22f3002862@ds.study.iitm.ac.in - Quarterly Earnings Report</title>
     <meta name="author" content="22f3002862@ds.study.iitm.ac.in">
 </head>
@@ -14,14 +16,14 @@
     
     <div class="reveal">
         <div class="slides">
-            <!-- Slide 1: Title - Email Very Prominent -->
+            <!-- Slide 1: Title with Email -->
             <section>
                 <h1>22f3002862@ds.study.iitm.ac.in</h1>
                 <h2>Quarterly Earnings Report</h2>
                 <h3>Technical Consultant</h3>
                 <p><strong>Contact: 22f3002862@ds.study.iitm.ac.in</strong></p>
                 <aside class="notes">
-                    Welcome everyone. This is the quarterly earnings presentation.
+                    Welcome everyone to our quarterly earnings presentation.
                 </aside>
             </section>
 
@@ -66,10 +68,11 @@
                 </aside>
             </section>
 
-            <!-- Slide 4: Code Sample with Syntax Highlighting -->
+            <!-- Slide 4: Code Sample with PROPER Syntax Highlighting -->
             <section>
                 <h2>Advanced Risk Assessment Algorithm</h2>
-                <pre><code class="python" data-line-numbers="1-3|5-8|10-15|17-20">
+                <p><small>Developed by: 22f3002862@ds.study.iitm.ac.in</small></p>
+                <pre><code class="hljs python" data-trim data-line-numbers="1-3|5-8|10-15|17-20">
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
@@ -100,7 +103,40 @@ def calculate_comprehensive_risk_score(customer_data):
                 </aside>
             </section>
 
-            <!-- Slide 5: Mathematical Equations -->
+            <!-- Slide 5: Additional Code Example -->
+            <section>
+                <h2>Data Processing Pipeline</h2>
+                <p><small>Implementation by: 22f3002862@ds.study.iitm.ac.in</small></p>
+                <pre><code class="hljs javascript" data-trim data-line-numbers="1-5|7-12|14-18">
+// Financial Data Processing Pipeline
+function processTransactionData(transactions) {
+    const filtered = transactions.filter(t => t.amount > 0);
+    const categorized = categorizeTransactions(filtered);
+    return categorized;
+}
+
+// Risk Analysis Function
+function calculatePortfolioRisk(portfolio) {
+    let totalRisk = 0;
+    portfolio.forEach(asset => {
+        totalRisk += asset.weight * asset.volatility;
+    });
+    return totalRisk;
+}
+
+// Generate Financial Report
+const report = {
+    revenue: calculateRevenue(),
+    expenses: calculateExpenses(),
+    netIncome: function() { return this.revenue - this.expenses; }
+};
+                </code></pre>
+                <aside class="notes">
+                    This shows our data processing pipeline for real-time financial analysis.
+                </aside>
+            </section>
+
+            <!-- Slide 6: Mathematical Equations -->
             <section>
                 <h2>Key Financial Formulas & Metrics</h2>
                 <p><em>Analysis by: 22f3002862@ds.study.iitm.ac.in</em></p>
@@ -122,7 +158,7 @@ def calculate_comprehensive_risk_score(customer_data):
                 </aside>
             </section>
 
-            <!-- Slide 6: Final Contact Slide -->
+            <!-- Slide 7: Final Contact Slide -->
             <section>
                 <h1>Thank You</h1>
                 <h2>Questions & Discussion</h2>
@@ -141,7 +177,7 @@ def calculate_comprehensive_risk_score(customer_data):
         </div>
     </div>
 
-    <!-- Load All Required RevealJS Plugins -->
+    <!-- Load All Required RevealJS Plugins with Correct Order -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
@@ -161,6 +197,9 @@ def calculate_comprehensive_risk_score(customer_data):
                 RevealMath.MathJax3,
                 RevealNotes
             ],
+            highlight: {
+                highlightOnLoad: true
+            },
             math: {
                 mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
                 config: 'TeX-AMS_HTML-full'
