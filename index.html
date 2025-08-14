@@ -8,83 +8,135 @@
 <body>
     <div class="reveal">
         <div class="slides">
-            <!-- Title Slide -->
+            <!-- Slide 1: Title with Email -->
             <section>
                 <h1>Quarterly Earnings Report</h1>
-                <h3>Financial Institution Overview</h3>
-                <p>
-                    <small>Prepared by Technical Consultant</small><br>
-                    <small>Email: 22f3002862@ds.study.iitm.ac.in</small>
-                </p>
+                <h2>22f3002862@ds.study.iitm.ac.in</h2>
+                <h3>Technical Consultant</h3>
+                <p>Financial Institution Overview</p>
                 <aside class="notes">
                     Welcome everyone to our quarterly earnings presentation. 
                     Today we'll review our financial performance and key metrics.
                 </aside>
             </section>
 
-            <!-- Markdown Slide -->
+            <!-- Slide 2: Markdown Slide -->
             <section data-markdown>
                 <textarea data-template>
                     ## Executive Summary
                     
-                    ### Key Highlights:
-                    - **Revenue Growth**: 15% YoY increase
+                    ### Key Performance Highlights:
+                    - **Revenue Growth**: 15% Year-over-Year increase
                     - **Net Income**: $2.3B quarterly profit
                     - **Customer Base**: 12M active users
                     - **Digital Transformation**: 87% online adoption
+                    - **Market Position**: Industry leader
+                    
+                    ---
+                    
+                    ## Strategic Initiatives
+                    
+                    1. Digital Banking Platform Expansion
+                    2. AI-Powered Risk Management
+                    3. Sustainable Finance Programs
+                    4. Customer Experience Enhancement
                 </textarea>
-            </section>
-
-            <!-- Animated Fragments Slide -->
-            <section>
-                <h2>Financial Performance</h2>
-                <ul>
-                    <li class="fragment">Revenue: $8.7B <span class="fragment highlight-green">(+15% YoY)</span></li>
-                    <li class="fragment">Operating Expenses: $5.2B <span class="fragment highlight-blue">(-3% YoY)</span></li>
-                    <li class="fragment">Net Income: $4.1B <span class="fragment highlight-green">(+12% YoY)</span></li>
-                </ul>
                 <aside class="notes">
-                    Walk through each metric slowly. Emphasize the cost reduction.
+                    These numbers represent our strongest quarter yet. 
+                    Emphasize the digital transformation success.
                 </aside>
             </section>
 
-            <!-- Code Sample Slide -->
+            <!-- Slide 3: Animated Fragments -->
+            <section>
+                <h2>Financial Performance Breakdown</h2>
+                <ul>
+                    <li class="fragment fade-in">Revenue: $8.7B <span class="fragment highlight-green">(+15% YoY)</span></li>
+                    <li class="fragment fade-in">Operating Expenses: $5.2B <span class="fragment highlight-blue">(-3% YoY)</span></li>
+                    <li class="fragment fade-in">Net Interest Income: $4.1B <span class="fragment highlight-green">(+12% YoY)</span></li>
+                    <li class="fragment fade-in">Non-Interest Income: $1.8B <span class="fragment highlight-green">(+8% YoY)</span></li>
+                </ul>
+                <div class="fragment fade-up">
+                    <h3 style="color: #2E8B57;">Exceptional Performance Across All Segments</h3>
+                </div>
+                <aside class="notes">
+                    Walk through each metric slowly. Highlight the cost reduction 
+                    while maintaining revenue growth. This shows operational efficiency.
+                </aside>
+            </section>
+
+            <!-- Slide 4: Code Sample -->
             <section>
                 <h2>Risk Assessment Algorithm</h2>
-                <pre><code class="python" data-line-numbers="1-3|5-8">
+                <pre><code class="python" data-line-numbers="1-3|5-8|10-15">
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
 # Credit Risk Scoring Model
 def calculate_risk_score(customer_data):
-    features = ['income', 'credit_history', 'debt_ratio']
-    return min(max(score, 0), 100)
+    """Calculate comprehensive risk score for loan approval"""
+    features = ['income', 'credit_history', 'debt_ratio', 'employment_years']
+    
+    # Apply weighted scoring algorithm
+    risk_weights = {
+        'income': 0.3,
+        'credit_history': 0.4,
+        'debt_ratio': 0.2,
+        'employment_years': 0.1
+    }
+    
+    score = sum(customer_data[feature] * weight 
+                for feature, weight in risk_weights.items())
+    
+    return min(max(score, 0), 100)  # Normalize to 0-100 scale
                 </code></pre>
                 <aside class="notes">
-                    This shows our updated risk assessment algorithm.
+                    This shows our updated machine learning risk assessment. 
+                    The algorithm improved accuracy by 23% while reducing processing time.
                 </aside>
             </section>
 
-            <!-- Mathematical Equations Slide -->
+            <!-- Slide 5: Mathematical Equations -->
             <section>
-                <h2>Financial Formulas</h2>
+                <h2>Key Financial Formulas</h2>
+                
                 <h3>Return on Equity (ROE)</h3>
                 <p>$$ROE = \frac{\text{Net Income}}{\text{Shareholders' Equity}} \times 100$$</p>
                 <p class="fragment">Current ROE: <strong>18.5%</strong></p>
                 
                 <h3 class="fragment">Capital Adequacy Ratio</h3>
-                <p class="fragment">$$CAR = \frac{\text{Tier 1 + Tier 2}}{\text{Risk Weighted Assets}} \times 100$$</p>
-                <p class="fragment">Current CAR: <strong>14.2%</strong></p>
+                <p class="fragment">$$CAR = \frac{\text{Tier 1 Capital + Tier 2 Capital}}{\text{Risk Weighted Assets}} \times 100$$</p>
+                <p class="fragment">Current CAR: <strong>14.2%</strong> (Above regulatory minimum)</p>
+                
+                <h3 class="fragment">Value at Risk (VaR)</h3>
+                <p class="fragment">$$VaR_{α} = \mu + \sigma \times \Phi^{-1}(α)$$</p>
+                <p class="fragment">95% VaR: <strong>$127M</strong> daily maximum expected loss</p>
                 
                 <aside class="notes">
-                    These are our key regulatory metrics.
+                    These are our key regulatory and performance metrics. 
+                    All ratios exceed regulatory requirements and industry benchmarks.
+                </aside>
+            </section>
+
+            <!-- Slide 6: Contact Slide -->
+            <section>
+                <h2>Thank You</h2>
+                <h3>Questions & Discussion</h3>
+                <p>
+                    <strong>Contact: 22f3002862@ds.study.iitm.ac.in</strong>
+                </p>
+                <p>Technical Consultant</p>
+                <p>Financial Institution</p>
+                <aside class="notes">
+                    End of presentation. Ready for questions. 
+                    Emphasize our strong position and future outlook.
                 </aside>
             </section>
         </div>
     </div>
 
-    <!-- Load RevealJS and Plugins -->
+    <!-- Load RevealJS and All Required Plugins -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
@@ -95,6 +147,8 @@ def calculate_risk_score(customer_data):
         Reveal.initialize({
             hash: true,
             transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
             plugins: [
                 RevealMarkdown, 
                 RevealHighlight, 
